@@ -31,12 +31,12 @@ app.post('/send-msg',(req,res)=>{
  * Send a query to the dialogflow agent, and return the query result.
  * @param {string} projectId The project to be used
  */
-async function runSample(msg,projectId = 'newbot-qtemco') {
+async function runSample(msg,projectId = 'dialogflow-293913') {
   // A unique identifier for the given session
   
   // Create a new session
   const sessionClient = new dialogflow.SessionsClient({
-      "keyFilename":"newbot-qtemco-19d861d74552.json"
+      "keyFilename":"dialogflow-293913-2ce13bf0153d.json"
   });
   const sessionPath = sessionClient.sessionPath(projectId, sessionId);
 
